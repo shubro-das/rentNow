@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <title>Give Information</title>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' ; <meta name='viewport'
+        content='width=device-width,initial-scale=1.0'>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 30px 150px;
+            padding: 10px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+
+
+        input[type="number"],
+        input[type="submit"],
+        input[type="reset"],
+        select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+
+        }
+
+        .btn {
+            font-size: 15px;
+            background: #6bf774da;
+        }
+
+        .btn:hover {
+            background: #94efa3da;
+            font-weight: bolder;
+            transition: 0.5s;
+        }
+
+        .btn1 {
+            font-size: 15px;
+            background: #ed9260da;
+        }
+
+        .btn1:hover {
+            background: #f1a88ff6;
+            font-weight: bolder;
+            transition: 0.5s;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+        <form action="/form" method="POST">
+            <h1>Give Necessary Information:</h1>
+            <hr><br><br>
+
+            <p>
+                <label for="Location">Location:</label>
+                <select name="location" id="Location" required>
+                    <option value="Coatbari">Coatbari</option>
+                    <option value="Changgini">Changgini</option>
+                    <option value="Kandirpar">Kandirpar </option>
+                    <option value="Nondonpur">Nondonpur</option>
+                    <option value="Komlapur">Komlapur</option>
+                    <option value="Salmanpur">Salmanpur</option>
+                    <option value="Rampur">Rampur</option>
+                    <option value="Joypur">Joypur</option>
+                    <option value="Kochuya">Kochuya</option>
+                    <option value="Shaktola">Shaktola</option>
+                    <option value="Nuyapara">Nuyapara</option>
+                    <option value="Rasulpur">Rasulpur</option>
+                    <option value="Muradnagar">Muradnagar</option>
+                    <option value="Dakshin Chortha">Dakshin Chortha</option>
+                    <option value="Uttor Chortha">Uttor Chortha </option>
+                    <option value="Bajrapur">Bajrapur </option>
+                    <option value="Monuhorpur">Monuhorpur</option>
+                    <option value="Jhautola">Jhautola</option>
+                    <option value="Bagichagaon">Bagichagaon</option>
+                    <option value="Vatpara">Vatpara</option>
+                    <option value="Bishnupur">Bishnupur </option>
+                    <option value="Chutra">Chutra</option>
+                    <option value="Kaliajuri">Kaliajuri</option>
+                    <option value="Kaptanbajar">Kaptanbajar</option>
+                    <option value="Mogoltuli">Mogoltuli</option>
+                </select>
+            </p><br><br>
+
+            <p>
+                <label for="Property_Type">Property Type:</label>
+                <select name="property_type" id="Property_Type" required>
+                    <option value="Residential">Residential</option>
+                    <option value="Shop Space">Shop Space</option>
+                    <option value="Office Rent">Office Rent </option>
+                </select>
+            </p><br><br>
+
+            <p>
+                <label for="no_of_rooms"> No. of Rooms:</label>
+                <input type="number" name="room" id="no_of_rooms" min="0" max="10" placeholder="Enter no. of rooms"
+                    required>
+            </p><br><br>
+
+            <p>
+                <label for="no_of_washrooms"> No. of Washrooms:</label>
+                <input type="number" name="washroom" id="no_of_washrooms" min="0" max="10"
+                    placeholder="Enter no. of washrooms" required>
+            </p><br><br>
+
+            <p>
+                <label for="no_of_balcony"> No. of Balcony:</label>
+                <input type="number" name="balcony" id="no_of_balcony" min="0" max="10"
+                    placeholder="Enter no. of balcony" required>
+            </p><br><br>
+
+            <p>
+                <label for="Gas_supply">Gas Supply:</label>
+                <select name="gas_supply" id="Gas_supply" required>
+                    <option value="Available">Available</option>
+                    <option value="Not Available">Not Available</option>
+                </select>
+            </p><br><br>
+
+            <input class="btn" type="submit" value="Submit"><br><br>
+            <input class="btn1" type="reset" value="Clear">
+        </form>
+    </div>
+
+</body>
+
+</html>

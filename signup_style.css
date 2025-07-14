@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    border:0px;
+    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:30px 100px;
+    font-size: 20px;
+    padding:10px;
+}
+
+.container{
+    background-color:#f2f2f2;
+    padding:5px 20px 15px 20px;
+    border:1px solid lightgray;
+    border-radius: 4px;
+
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="submit"],
+input[type="reset"]
+{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn{
+    font-size: 15px;
+    background: #6bf774da;
+}
+
+.btn:hover{
+    background: #94efa3da;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.btn1{
+    font-size: 15px;
+    background: #ed9260da;
+}
+
+.btn1:hover{
+    background: #f1a88ff6;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+

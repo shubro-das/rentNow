@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentNow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        header {
+            background: black;
+            height: 90px;
+            position: sticky;
+            top: 0px;
+        }
+
+        .logo {
+            cursor: pointer;
+        }
+
+        label {
+            color: white;
+            font-size: 50px;
+            line-height: 90px;
+            padding: 0px 100px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            float: right;
+            margin-right: 20px;
+            background: none;
+
+            /*padding: 30px 10%;*/
+        }
+
+        nav ul li {
+            /*justify-content: space-between;*/
+            margin: 0 30px;
+
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            line-height: 85px;
+        }
+
+        a:hover {
+            background: rgb(36, 114, 193);
+            transition: .5s;
+        }
+
+        .bg {
+            height: 800px;
+            width: 100%; 
+            background: linear-gradient(90deg, #558787, #2c2e2e);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: cover;
+            background-blend-mode: darken;
+        }
+
+        .row1 {
+            font-size: 50px;
+            font-family: 'verdana', Courier, monospace;
+            font-weight: bold;
+            color: rgb(228, 236, 238);
+            text-align: center;
+            /*isolation:isolate;*/
+        }
+
+        .main {
+            height: 100px;
+            width: 500px;
+            font-family: Courier;
+            font-weight: bold;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-gap: 5px 20px;
+        }
+
+        .main div {
+            padding: 20px;
+            border: 2px solid black;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .c1 {
+            background: linear-gradient(90deg, #1a2a52, #2c2e2e);
+            padding-top: 30px;
+            font-weight: bolder;
+            border-radius: 4px;
+            color: azure;
+        }
+
+        .c2 {
+            background: linear-gradient(90deg, #5e0e29, #2c2e2e);
+            padding: 10px 10px 0px 10px;
+            font-weight: bolder;
+            border-radius: 4px;
+            color: azure;
+        
+        }
+
+        .c1:hover {
+            font-weight: bold;
+            background: linear-gradient(90deg, #1a2a52, #2c2e2e);
+            transform: scale(1.04);
+            transition: 0.2s ease-in-out;
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .c2:hover {
+            background: linear-gradient(90deg, #5e0e29, #2c2e2e);
+            font-weight: bold;
+            transform: scale(1.04);
+            transition: 0.2s ease-in-out;
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+            height: 43px;
+            width: 130px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            transform: scale(1.04);
+            transition: 0.2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="logo">RentNow</label>
+            <ul>
+                <li><a class="" href="/">Home</a></li>
+                <li><a class="" href="/all" target=_blank>All Properties</a></li>
+                <li><a class="" href="/login" target=_blank>Log In</a></li>
+                <li><a class="" href="/signup" target=_blank>Sign up</a></li>
+                <li><a class="" href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="bg">
+        <form action="/" method="POST">
+
+            <p class="row1">
+                <br>
+                <br>
+                Choose your perfect place!
+            </p>
+            <br>
+            <div class="main">
+
+
+                <div class="c1">Area:
+                    <select name="location" id="location" required>
+                        <option value="Coatbari">Coatbari</option>
+                        <option value="Changgini">Changgini</option>
+                        <option value="Kandirpar">Kandirpar </option>
+                        <option value="Nondonpur">Nondonpur</option>
+                        <option value="Komlapur">Komlapur</option>
+                        <option value="Salmanpur">Salmanpur</option>
+                        <option value="Rampur">Rampur</option>
+                        <option value="Joypur">Joypur</option>
+                        <option value="Kochuya">Kochuya</option>
+                        <option value="Shaktola">Shaktola</option>
+                        <option value="Nuyapara">Nuyapara</option>
+                        <option value="Rasulpur">Rasulpur</option>
+                        <option value="Muradnagar">Muradnagar</option>
+                        <option value="Dakshin Chortha">Dakshin Chortha</option>
+                        <option value="Uttor Chortha">Uttor Chortha </option>
+                        <option value="Bajrapur">Bajrapur </option>
+                        <option value="Monuhorpur">Monuhorpur</option>
+                        <option value="Jhautola">Jhautola</option>
+                        <option value="Bagichagaon">Bagichagaon</option>
+                        <option value="Vatpara">Vatpara</option>
+                        <option value="Bishnupur">Bishnupur </option>
+                        <option value="Chutra">Chutra</option>
+                        <option value="Kaliajuri">Kaliajuri</option>
+                        <option value="Kaptanbajar">Kaptanbajar</option>
+                        <option value="Mogoltuli">Mogoltuli</option>
+                    </select>
+                </div>
+
+                <div class="c2">Requirements:
+                    <select name="property_type" id="property_type" required>
+                        <option value="Residential">Residential</option>
+                        <option value="Shop Space">Shop Space</option>
+                        <option value="Office Rent">Office Rent </option>
+                    </select>
+                </div>
+
+
+
+            </div>
+            <div style="margin-top:50px;margin-left:655px;">
+                <button class="btn">Search</button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>

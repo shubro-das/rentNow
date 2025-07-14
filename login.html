@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    	<title>Log In</title>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge';
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        body{
+            margin:30px 500px;
+            padding:10px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      
+
+        .container{
+            background-color: #f2f2f2;
+            padding:5px 20px 15px 20px;
+            border:1px solid lightgray;
+            border-radius: 5px;
+        }
+ 
+        input[type="tel"], 
+        input[type="password"],
+        input[type="submit"],
+        input[type="reset"]
+        {
+            width:100%;
+            padding:15px;
+            border:1px solid #ccc;
+
+        }
+        .btn{
+            font-size: 15px;
+            background: #6bf774da;
+        }
+
+        .btn:hover{
+            background: #94efa3da;
+            font-weight: bolder;
+            transition: 0.5s;
+        }
+        .btn1{
+            font-size: 15px;
+            background: #ed9260da;
+        }
+
+        .btn1:hover{
+            background: #f1a88ff6;
+            font-weight: bolder;
+            transition: 0.5s;
+        }
+    </style>
+
+</head>
+	
+
+<body>
+   
+
+    <div class="container">
+
+	<h1>Log In:</h1><br><br>
+    <form action="/login" method="POST">
+    <p>
+	    <label for="mobile"> Mobile:</label>
+	    <input type="tel" name="mobile" id="mobile" placeholder="Enter your mobile" required>
+    </p><br><br>
+    <p>
+	    <label for="password"> Password:</label>
+	    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+	</p><br><br>
+    <input class="btn" type="submit" value="Submit"><br><br>
+	<input class="btn1" type="reset" value="Clear">
+    </form>
+
+    </div>   
+	
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+	<title>Sign Up</title>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' ; <meta name='viewport'
+		content='width=device-width,initial-scale=1.0'>
+	<link rel="stylesheet" href="signup_style.css">
+	<style>
+		* {
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			margin: 30px 300px;
+			font-size: 20px;
+			padding: 10px;
+		}
+
+		.container {
+			background-color: #f2f2f2;
+			padding: 5px 40px 15px 40px;
+			border: 1px solid lightgray;
+			border-radius: 4px;
+
+		}
+
+		input[type="text"],
+		input[type="number"],
+		input[type="email"],
+		input[type="tel"],
+		input[type="password"],
+		input[type="submit"],
+		input[type="reset"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		.btn {
+			font-size: 15px;
+			background: #6bf774da;
+		}
+
+		.btn:hover {
+			background: #94efa3da;
+			font-weight: bolder;
+			transition: 0.5s;
+		}
+
+		.btn1 {
+			font-size: 15px;
+			background: #ed9260da;
+		}
+
+		.btn1:hover {
+			background: #f1a88ff6;
+			font-weight: bolder;
+			transition: 0.5s;
+		}
+	</style>
+
+</head>
+
+
+<body>
+
+
+	<div class="container">
+		<form class="form" action="/signup" method="POST">
+			<h1>Sign Up</h1>
+			<br><br>
+
+			<p>
+				<label for="Name"> Name:</label>
+				<input type="text" name="name" id="Name" placeholder="Enter your name" required>
+			</p><br><br>
+			<p>
+				<label for="Address">Address:</label>
+				<input type="text" name="address" id="Address" placeholder="Enter your address" required>
+			</p><br><br>
+			<p>
+				<label for="NID">NID:</label>
+				<input type="number" name="nid" id="NID" placeholder="1111-2222-3333" required>
+			</p><br><br>
+			<p>
+				<label for="Email"> Email:</label>
+				<input type="email" name="email" id="Email" placeholder="name12@gmail.com" required>
+			</p><br><br>
+			<p>
+				<label for="Mobile">Mobile:</label>
+				<input type="tel" name="mobile" id="Mobile" placeholder="01xxxxxx" required>
+			</p><br><br>
+			<p>
+				<label for="Password">Set Password:</label>
+				<input type="password" name="password" id="Password" required><br><br>
+			</p><br><br>
+
+			<input class="btn" type="submit" value="Submit"><br><br>
+			<input class="btn1" type="reset" value="Clear">
+		</form>
+	</div>
+
+
+</body>
+
+</html>

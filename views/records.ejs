@@ -1,0 +1,60 @@
+<!-- views/records.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Properties</title>
+  <style>
+    /* Add CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h2>Records</h2>
+  <table>
+    <tr>
+      <th>Location</th>
+      <th>Property Type</th>
+      <th>No. of Rooms</th>
+      <th>No. of Washrooms</th>
+      <th>No. of Balcony</th>
+      <th>Gas Supply</th>
+      <th>Owner's Name</th>
+      <th>Phone Number</th>
+    </tr>
+    <% records.forEach(record => { %>
+      <tr>
+        <td><%= record.location %></td>
+        <td><%= record.property_type %></td>
+        <td><%= record.room %></td>
+        <td><%= record.washroom %></td>
+        <td><%= record.balcony %></td>
+        <td><%= record.gas_supply %></td>
+        <td><%= record.name %></td>
+        <td><%= record.mobile %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>
